@@ -1,7 +1,16 @@
-from ArrayList import ArrayList
+import os
+import sys
+# sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../../dataStruct')))
+sys.path.append(os.path.dirname(os.path.abspath(os.path.dirname(os.path.abspath(os.path.dirname(__file__))))))
+# sys.path.append(os.path.dirname(os.path.abspath(os.path.dirname(os.path.abspath(os.path.dirname(__file__))))))
+# print(os.path.dirname(os.path.abspath(os.path.dirname(os.path.abspath(os.path.dirname(__file__))))))
+# print(os.path.abspath(os.path.join(os.path.dirname(__file__), '../../dataStruct')))
+
+
+from dataStruct import ArrayList
 
 def myLineEditor():
-    list = ArrayList()
+    list = ArrayList.ArrayList()
     while True:
         command = input("[메뉴선택] i-입력, d-삭제, r-변경, p-출력, l-파일읽기, s-저장, q-종료=> ")
         if command == 'i':
