@@ -4,6 +4,10 @@ import "fmt"
 
 type Arraylist []interface{}
 
+func NewArrayList() *Arraylist {
+	return &Arraylist{}
+}
+
 func (a *Arraylist) Insert(pos int, elem interface{}) *Arraylist {
 	result := append(*a, elem)
 	copy(result[pos+1:], result[pos:])

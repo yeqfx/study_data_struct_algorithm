@@ -7,7 +7,7 @@ import (
 )
 
 func main() {
-	var s = &ArrayList.Arraylist{}
+	var s = ArrayList.NewArrayList()
 	s.Display("Golang Interface 슬라이스로 구현한 ArrayList 테스트")
 	// a = make(Arraylist, 10)
 	s = s.Insert(0, 10)
