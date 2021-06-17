@@ -167,4 +167,6 @@ Thumbs.db
 .history
 .ionide
 
+mytest.*
+
 # End of https://www.toptal.com/developers/gitignore/api/python,visualstudiocode
