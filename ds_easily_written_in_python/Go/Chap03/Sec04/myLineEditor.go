@@ -10,7 +10,7 @@ import (
 )
 
 func main() {
-	list := &ArrayList.Arraylist{}
+	list := ArrayList.NewArrayList()
 LoopFor:
 	for {
 		var command string

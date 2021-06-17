@@ -4,6 +4,10 @@ import "fmt"
 
 type Set []interface{}
 
+func NewSet() *Set {
+	return &Set{}
+}
+
 func (s *Set) Size() int {
 	return len(*s)
 }
