@@ -14,5 +14,8 @@ func main() {
 		log.Fatal(err)
 	}
 	result := myutils.CheckBrackets(string(statement))
-	fmt.Println("main.go ----->", result)
+	fmt.Println("CheckBrackets    (string) : main.go ----->", result)
+
+	result = myutils.CheckBracketsV2(string(statement))
+	fmt.Println("CheckBrackets V2 ([]byte) : main.go ----->", result)
 }

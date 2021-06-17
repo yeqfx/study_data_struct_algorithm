@@ -25,7 +25,7 @@ func CheckBrackets(statement string) bool {
 
 func CheckBracketsV2(statement string) bool {
 	stack := slicestack.NewSliceStack()
-	for ch := range statement {
+	for _, ch := range statement {
 		if ch == '{' || ch == '[' || ch == '(' {
 			stack.Push(ch)
 		} else if ch == '}' || ch == ']' || ch == ')' {
