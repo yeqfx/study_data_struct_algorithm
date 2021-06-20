@@ -4,6 +4,7 @@ import sys
 sys.path.append(os.path.dirname(os.path.abspath(os.path.dirname(__file__))))
 from dataStruct import ArrayStack
 
+
 def evalPostfix(expr):
     s = ArrayStack.ArrayStack()
     for token in expr:
@@ -16,6 +17,7 @@ def evalPostfix(expr):
             elif (token == '/'): s.push(val1 / val2)
         else: s.push(float(token))
     return s.pop()
+
 
 def Infix2Postfix(expr):
     s = ArrayStack.ArrayStack()
