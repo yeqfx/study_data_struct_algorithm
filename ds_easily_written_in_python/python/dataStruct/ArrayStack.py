@@ -3,7 +3,7 @@ class ArrayStack:
         self.top = []
 
     def __str__(self):
-        return str(self.top)
+        return str(self.top[::-1])
 
     def isEmpty(self):
         return len(self.top) == 0
