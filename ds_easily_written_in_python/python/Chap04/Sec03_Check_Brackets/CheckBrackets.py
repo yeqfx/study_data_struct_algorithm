@@ -5,7 +5,7 @@ import sys
 
 sys.path.append(os.path.dirname(os.path.abspath(os.path.dirname(os.path.abspath(os.path.dirname(__file__))))))
 # from utilities import checkBrackets
-from utilities import checkBrackets
+from myutil import checkBrackets
 
 if __name__ == "__main__":
     
